@@ -1,8 +1,8 @@
 package com.calculator.models;
 
 public interface ICalculator {
-    double Addition();
-    double Subtraction();
-    double Multiplication();
-    double Division();
+    double addition();
+    double subtraction();
+    double multiplication();
+    double division();
 }

@@ -1,40 +1,41 @@
 package com.calculator.models;
 
 public class Calculation {
-    private double firstOperand;
-    private double secondOperand;
-    private double operator;
-    private double result;
+    private Double firstOperand;
+    private Double secondOperand;
+    private Character operator;
+    private Double result;
 
-    public double getFirstOperand() {
+
+    public Double getFirstOperand() {
         return firstOperand;
     }
 
-    public void setFirstOperand(double firstOperand) {
+    public void setFirstOperand(Double firstOperand) {
         this.firstOperand = firstOperand;
     }
 
-    public double getSecondOperand() {
+    public Double getSecondOperand() {
         return secondOperand;
     }
 
-    public void setSecondOperand(double secondOperand) {
+    public void setSecondOperand(Double secondOperand) {
         this.secondOperand = secondOperand;
     }
 
-    public double getOperator() {
+    public Character getOperator() {
         return operator;
     }
 
-    public void setOperator(double operator) {
+    public void setOperator(Character operator) {
         this.operator = operator;
     }
 
-    public double getResult() {
+    public Double getResult() {
         return result;
     }
 
-    public void setResult(double result) {
+    public void setResult(Double result) {
         this.result = result;
     }
 }

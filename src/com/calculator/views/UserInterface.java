@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class UserInterface implements IUserInterface {
     private Scanner scanner;
+
     public UserInterface(){
         scanner = new Scanner(System.in);
     }
@@ -15,6 +16,7 @@ public class UserInterface implements IUserInterface {
             result = scanner.nextInt();
         }catch(Exception e){
             result = null;
+            scanner.nextLine();
         }
         return result;
     }
@@ -26,6 +28,7 @@ public class UserInterface implements IUserInterface {
             result = scanner.nextDouble();
         }catch(Exception e){
             result = null;
+            scanner.nextLine();
         }
         return result;
     }
@@ -37,6 +40,7 @@ public class UserInterface implements IUserInterface {
             result = scanner.next().charAt(0);
         }catch(Exception e){
             result = null;
+            scanner.nextLine();
         }
         return result;
     }
@@ -48,6 +52,7 @@ public class UserInterface implements IUserInterface {
             result = scanner.next();
         }catch(Exception e){
             result = null;
+            scanner.nextLine();
         }
         return result;
     }
@@ -66,5 +71,6 @@ public class UserInterface implements IUserInterface {
         writeText("\t[2] Subtraction");
         writeText("\t[3] Multiplication");
         writeText("\t[4] Division");
+        writeText("\t[0] Exit");
     }
 }
