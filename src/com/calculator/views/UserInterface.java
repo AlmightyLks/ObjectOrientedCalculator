@@ -2,14 +2,13 @@ package com.calculator.views;
 
 import java.util.Scanner;
 
-public class UserInterface implements IUserInterface {
+public class UserInterface implements IUserInterface{
     private Scanner scanner;
 
     public UserInterface(){
         scanner = new Scanner(System.in);
     }
 
-    @Override
     public Integer readInteger() {
         Integer result;
         try{
@@ -21,7 +20,6 @@ public class UserInterface implements IUserInterface {
         return result;
     }
 
-    @Override
     public Double readDouble() {
         Double result;
         try{
@@ -33,7 +31,6 @@ public class UserInterface implements IUserInterface {
         return result;
     }
 
-    @Override
     public Character readCharacter() {
         Character result;
         try{
@@ -45,7 +42,6 @@ public class UserInterface implements IUserInterface {
         return result;
     }
 
-    @Override
     public String readString() {
         String result;
         try{
@@ -57,20 +53,7 @@ public class UserInterface implements IUserInterface {
         return result;
     }
 
-    @Override
     public void writeText(String text) {
         System.out.println(text);
-    }
-
-    @Override
-    public void displayMenu() {
-        for (int i = 0; i < 24; i++){ writeText(""); }
-        writeText("\tMenu");
-        writeText("");
-        writeText("\t[1] Addition");
-        writeText("\t[2] Subtraction");
-        writeText("\t[3] Multiplication");
-        writeText("\t[4] Division");
-        writeText("\t[0] Exit");
     }
 }

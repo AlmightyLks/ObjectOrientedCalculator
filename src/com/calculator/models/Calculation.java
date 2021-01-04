@@ -1,11 +1,17 @@
 package com.calculator.models;
 
 public class Calculation {
-    private Double firstOperand;
-    private Double secondOperand;
-    private Character operator;
-    private Double result;
+    private double firstOperand;
+    private double secondOperand;
+    private char operator;
+    private double result;
 
+    public Calculation(double firstOperand, double secondOperand, char operator, double result){
+        this.firstOperand = firstOperand;
+        this.secondOperand = secondOperand;
+        this.operator = operator;
+        this.result = result;
+    }
 
     public Double getFirstOperand() {
         return firstOperand;
@@ -37,5 +43,9 @@ public class Calculation {
 
     public void setResult(Double result) {
         this.result = result;
+    }
+
+    public String toString(){
+        return getFirstOperand() + " " + getOperator()+ " " + getSecondOperand() + " = " + getResult();
     }
 }
